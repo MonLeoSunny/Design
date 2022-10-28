@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý bán hàng</title>
+    <link rel="stylesheet" href="main.css" >
+</head>
+<body>
+    <div class="header">
+        <a href="danhmuc.html" title="Quản lý bán hàng"><h1>Quản lý bán hàng</h1></a>
+        
+        <div class="logout">
+            Xin chào <b>Admin</b>
+            <a href="#" title="Log out">Log out</a>
+        </div>
+
+        <ul class="navigation">
+            <a href="danhmuc.html" title="Danh mục sản phẩm" class="navigation-item"><li>Danh mục sản phẩm</li></a>
+            <a href="sanpham.html" title="Quản lý sản phẩm"><li>Quản lý sản phẩm</li></a>
+            <a href="donhang.html" title="Quản lý đơn hàng"><li>Quản lý đơn hàng</li></a>
+            <a href="khachhang.html" title="Quản lý khách hàng"><li>Quản lý khách hàng</li></a>
+            <a href="nhanvien.html" title="Quản lý người dùng"><li>Quản lý nhân viên</li></a>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <span class="ketquatimkiem">Tìm thấy 3 kết quả</span>
+
+        <form class="timkiem" method="post">
+            <input type="search" class="txt" name="txtSearch" id="txtSearch" placeholder="Nhập từ khoá cần tìm" style="width: 250px;" />
+        </form>
+
+        <div class="danhsach">
+        	<ul class="danhsach-header">
+            	<li style="width:50px;">ID</li>
+                <li style="width:400px;">Tên danh mục</li>
+                <li style="width:80px; text-align:center;">Trạng thái</li>
+                <li style="width:100px; float:right; text-align:right;">
+                	<a href="#" name="btnThemDanhMuc" id="btnThemDanhMuc" title="Thêm danh mục mới">+ Thêm mới</a>
+                </li>            </ul>
+            <div class="danhsach-chitiet">
+                <ul class="danhsach-item">
+                    <li style="width:50px;">1</li>
+                    <li style="width:400px;">
+                        <input type="text" class="editField" name="txtTenDanhMuc1" id="txtTenDanhMuc1" readonly value="Quần áo trẻ em" title="Quần áo trẻ em" />
+                    </li>
+                    <li style="width:80px; text-align:center;">
+                        <img class="imgTrangThai" name="imgTrangThai1" id="imgTrangThai1" src="files/images/check.png" alt="" width="16" height="16" data-code="1" title="Kích hoạt" />
+                    </li>
+                    <li style="width:100px; float:right; text-align:right;">
+                        <a class="lnkSua" name="btnSua1" id="btnSua1" data-id="1" data-trangthai="0" title="Sửa danh mục">Sửa</a>
+                        <a class="lnkXoa" name="btnXoa1" id="btnXoa1" data-id="1" title="Xoá danh mục">Xoá</a>
+                    </li>
+                </ul>
+                <ul class="danhsach-item">
+                    <li style="width:50px;">2</li>
+                    <li style="width:400px;">
+                        <li style="width:400px;">
+                        <input type="text" class="editField" name="txtTenDanhMuc2" id="txtTenDanhMuc2" readonly value="Quần áo người lớn" title="Quần áo người lớn" />
+                    </li>
+                    </li>
+                    <li style="width:80px; text-align:center;">
+                        <img class="imgTrangThai" name="imgTrangThai2" id="imgTrangThai2" src="files/images/delete.png" alt="" width="16" height="16" data-code="0" title="Ẩn" />
+                    </li>
+                    <li style="width:100px; float:right; text-align:right;">
+                        <a class="lnkSua" name="btnSua2" id="btnSua2" data-id="2" data-trangthai="0" title="Sửa danh mục">Sửa</a>
+                        <a class="lnkXoa" name="btnXoa2" id="btnXoa2" data-id="2" title="Xoá danh mục">Xoá</a>
+                    </li>
+                </ul>
+                <ul class="danhsach-item">
+                    <li style="width:50px;">3</li>
+                    <li style="width:400px;">
+                        <li style="width:400px;">
+                        <input type="text" class="editField" name="txtTenDanhMuc3" id="txtTenDanhMuc3" readonly value="Thiết bị điện tử" title="Thiết bị điện tử" />
+                    </li>
+                    </li>
+                    <li style="width:80px; text-align:center;">
+                        <img class="imgTrangThai" name="imgTrangThai3" id="imgTrangThai3" src="files/images/check.png" alt="" width="16" height="16" data-code="1" title="Kích hoạt" />
+                    </li>
+                    <li style="width:100px; float:right; text-align:right;">
+                    	<a class="lnkSua" name="btnSua3" id="btnSua3" data-id="3" data-trangthai="0" title="Sửa danh mục">Sửa</a>
+                        <a class="lnkXoa" name="btnXoa3" id="btnXoa3" data-id="3" title="Xoá danh mục">Xoá</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="danhsach-navigation">
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">< Trang cũ</a>
+            <label id="lblTrang">1/1 trang</label>
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">Trang kế ></a>
+        </div>
+    </div>
+    <div class="footer">
+    	<p><b>Đồ án Lập trình web bán hàng</b></p>
+        <span style="line-height:18px;">
+            <b>Nhóm thực hiện:</b><br/>
+            Vũ Tuấn Anh - MSV: <br/>
+            Phạm Xuân Long - MSV: 70DCTT21268<br/>
+            Lê Ánh Quyên - MSV: 70DCTT21105<br/>
+            Nguyễn Văn Đức - MSV: 70DCTT21104<br/>
+            Nguyễn Hoài Nam - MSV: 70DCTT22035
+        </span>
+    </div>
+</body>
+</html>
